@@ -1,0 +1,54 @@
+ou are given a string, sequence, of space-separated integers.
+
+Your goal is to determine the direction of the arithmetic sequence, and calculate the previous_term and next_term of the sequence. This means that there are three answers to find.
+
+The direction is determined by what direction the difference between consecutive integers in sequence is. It will either be Increasing or Decreasing depending on the change which is either positive or negative. The difference between consecutive integers will always be equal.
+
+To find the previous_term and next_term in a sequence, you must extend the sequence by difference in negative and positive directions.
+
+The answer must be outputted on a single, space-separated line that follows this format: "direction previous_term next_term".
+
+_____________________________________________________
+
+EXAMPLE:
+
+sequence = "2 3 4 5 6 7 8 9"
+
+# Determine the direction:
+3 - 2 = 1 (The difference is +1)
+
+direction = "Increasing"
+
+# Calculate the previous_term and the next term:
+Moving backward from 2 and 3, the previous term is 1 (previous_term).
+Moving forward from 8 and 9, the next term is 10 (next_term).
+
+Answer for this sequence is: "Increasing 1 10"
+Entrée
+Line 1: A string, sequence, of space-separated integers.
+Sortie
+Line 1: A string, answer, of three space-separated answers: (Increasing or Decreasing) (previous_term) (next_term).
+Contraintes
+0 < (length of sequence) <= 200
+-10,000 <= (value of each integer in sequence) <= 10,000
+Exemples
+
+Entrée
+2 3 4 5 6 7 8 9
+Sortie
+Increasing 1 10
+
+Entrée
+150 175
+Sortie
+Increasing 125 200
+
+Entrée
+5000 4500 4000 3500 3000 2500 2000 1500 1000
+Sortie
+Decreasing 5500 500
+
+Entrée
+5000 4000 3000 2000 1000 0 -1000
+Sortie
+Decreasing 6000 -2000

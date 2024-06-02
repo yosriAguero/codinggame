@@ -1,0 +1,93 @@
+﻿Given a string representing the item you are currently looking at item while dumpster diving, you must output whether to YEET or to YOINK the item depending on if it is in your wishlist or not.
+
+To "YEET" something means to throw it (discard) and to "YOINK" something means to grab it (keep).
+Entrée
+Line 1: Comma-and-space-separated strings wishlist containing the items you wish to keep if found.
+Line 2: An integer N for the number of items found in the dumpster.
+Next N lines: A case-sensitive string item representing the item you are currently looking at.
+Sortie
+N lines: Your response to the item being looked at.
+YEET if you should keep the item.
+YOINK if you should discard the item.
+Contraintes
+1 ≤ N ≤ 100
+Exemple
+Entrée
+Cup, Table, TV
+1
+TV
+Sortie
+YOINK
+
+
+
+
+
+
+Bread, Apple, Lemon, Cucumber, Chicken                    
+8
+Banana
+Orange
+Grapes
+Lemon
+Strawberries
+Bread
+Apple
+Sock     
+
+
+YEET
+YEET
+YEET
+YOINK
+YEET
+YOINK
+YOINK
+YEET
+
+
+
+
+
+Painting
+5
+Chair
+Table
+Shirt
+Painting
+Underwear
+
+YEET
+YEET
+YEET
+YOINK
+YEET
+
+
+
+
+
+
+Table, Shirt, Money, Book, Hat, Chair, Couch, Jewelry, Tablet
+10
+Chair
+Table
+Toothbrush
+Shirt
+Underwear
+Painting
+Hat
+Pants
+Watermelon
+Book
+
+YOINK
+YOINK
+YEET
+YOINK
+YEET
+YEET
+YOINK
+YEET
+YEET
+YOINK 
