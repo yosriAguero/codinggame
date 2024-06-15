@@ -14,12 +14,14 @@ export class ProductListAltComponent implements OnInit, OnDestroy {
   errorMessage = '';
   selectedProductId = 0;
 
+
   products: Product[] = [];
   sub!: Subscription;
 
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
+    
     this.sub = this.productService.getProducts().subscribe({
       next: products => this.products = products,
       error: err => this.errorMessage = err
@@ -31,6 +33,7 @@ export class ProductListAltComponent implements OnInit, OnDestroy {
   }
 
   onSelected(productId: number): void {
-    console.log('Not yet implemented');
+    this.selectedProductId = productId;
+    console.log('selected');
   }
 }

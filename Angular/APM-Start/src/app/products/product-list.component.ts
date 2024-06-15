@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 
-import { Subscription } from 'rxjs';
+import { Subscription, map,tap } from 'rxjs';
 import { ProductCategory } from '../product-categories/product-category';
 
 import { Product } from './product';
@@ -21,7 +21,10 @@ export class ProductListComponent implements OnInit, OnDestroy {
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    this.sub = this.productService.getProducts()
+    this.sub = this.productService.getProducts().pipe(
+      //map(pr=>({...pr,color:'red'})),
+      tap((pr: any)=>console.log(pr))
+    )
       .subscribe({
         next: products => this.products = products,
         error: err => this.errorMessage = err
