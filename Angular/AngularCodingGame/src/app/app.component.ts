@@ -1,10 +1,11 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { MergeStringComponent } from './merge-string/merge-string.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,MergeStringComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -16,10 +17,10 @@ Hello!: string;
     this.Hello = "Hello";
   }
   ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
+ 
   }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+   
   }
   title = 'AngularCodingGame';
 
