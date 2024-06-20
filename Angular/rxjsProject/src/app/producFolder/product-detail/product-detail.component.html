@@ -1,0 +1,31 @@
+<div class="card" *ngIf="productDetail">
+    <div class="cardheder">
+        product details
+    </div>
+<div class="card_body">
+    <div class="row">
+        <div class="col-md-2">Name:</div>
+        <div class="col-md-6">{{ productDetail.productName }}</div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">Code:</div>
+        <div class="col-md-6">{{ productDetail.productCode }}</div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">Category:</div>
+        <div class="col-md-6">{{ productDetail.categoryId }}</div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">Description:</div>
+        <div class="col-md-6">{{ productDetail.description }}</div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">Price:</div>
+        <div class="col-md-6">{{ productDetail.price | currency: "USD":"symbol" }}</div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">In Stock:</div>
+        <div class="col-md-6">{{ productDetail.quantityInStock }}</div>
+      </div>
+</div>
+</div>

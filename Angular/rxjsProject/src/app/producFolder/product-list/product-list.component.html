@@ -1,0 +1,23 @@
+
+<div class="card">
+    <div class="card-body" *ngIf="products">
+        <div class="row">
+            <div class="col-4">
+        <div class="list-group">
+        <button type="button"
+         class="list-group-item"
+          *ngFor="let product of products" 
+        [ngClass]="{ active: product?.id === selectedProductId }"
+        (click)="onSelected (product.id)" >
+       
+        {{product.productName}}
+    </button>
+        </div>
+        </div>
+        <div class="col-8">
+            <app-product-detail [productId]="selectedProductId"></app-product-detail>
+        </div>
+    </div>
+        
+    </div>
+</div>
