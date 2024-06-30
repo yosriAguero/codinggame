@@ -5,6 +5,13 @@ export interface Product {
     description: string;
     price: number;
     categoryId: number;
-    quantityInStock: number;
+    quantityInStock?: number;
+    hasReviews?: boolean;
+    reviews?: Review[];
     supplierIds?: number[]; // Optional field for supplier IDs
+  }
+
+  export interface Review{
+    id: number;
+  remark: string;
   }

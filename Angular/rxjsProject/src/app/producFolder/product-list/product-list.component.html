@@ -1,8 +1,13 @@
 
+<br/><br/><br/>
+<div class="row">
+    <div class="col-4">
 <div class="card">
+    <div class="card-header">
+       Products List
+    </div>
     <div class="card-body" *ngIf="products">
-        <div class="row">
-            <div class="col-4">
+       
         <div class="list-group">
         <button type="button"
          class="list-group-item"
@@ -14,10 +19,11 @@
     </button>
         </div>
         </div>
-        <div class="col-8">
-            <app-product-detail [productId]="selectedProductId"></app-product-detail>
-        </div>
+       
     </div>
         
+    </div>
+    <div class="col-8">
+        <app-product-detail [productId]="selectedProductId"></app-product-detail>
     </div>
 </div>

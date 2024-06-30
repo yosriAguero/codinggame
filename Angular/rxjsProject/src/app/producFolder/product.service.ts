@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Product } from './product.model';
-import { Observable, filter, of } from 'rxjs';
+import { Product, Review } from './product.model';
+import { Observable, filter, from, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,12 +12,15 @@ export class ProductService {
   getProducts(): Observable<Product[]> {
     return of(PRODUCTS); // Return the static product list as an observable
   }
+  //products$ = of(PRODUCTS);
 
   getProductbyId(id: number): Observable<Product>{ 
  return   of(...PRODUCTS).pipe(
       filter(pr=>pr.id === id)
     )
   }
+ 
+ 
 }
 
 
@@ -31,7 +34,11 @@ const PRODUCTS: Product[] = [
     price: 19.95,
     categoryId: 1,
     quantityInStock: 15,
-    supplierIds: [1, 2]
+    supplierIds: [1, 2],
+    hasReviews : true,
+    reviews: [
+{id:1, remark:'good'},{id:2, remark:'bad'},{id:3, remark:'Meduim'},
+    ]
   },
   {
     id: 2,
