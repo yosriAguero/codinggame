@@ -1,0 +1,4 @@
+Create an observer with properties next , error, complete.
+use of(IPerson[])
+IPErson contains name and last name
+use map operator to add a new property profession which is footballer
