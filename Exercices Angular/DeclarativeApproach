@@ -1,0 +1,28 @@
+import 'zone.js';
+import {Component} from '@angular/core';
+import {bootstrapApplication} from '@angular/platform-browser';
+import { Observable, of } from 'rxjs';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports:[FormsModule,CommonModule],
+  template: `
+  <ul>
+    <li *ngFor="let item of items$ | async ">{{item}}</li> 
+</ul>
+  `,
+})
+export class App {
+  name = 'Angular';
+   items$ : Observable<number[]>= this.getNumber$();
+
+  getNumber$() : Observable<number[]>
+  {
+    return of ([1,3,5,7])
+  }
+}
+
+bootstrapApplication(App);
