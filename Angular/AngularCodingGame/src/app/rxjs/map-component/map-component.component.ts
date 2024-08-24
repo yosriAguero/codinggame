@@ -48,7 +48,14 @@ export class MapComponentComponent implements OnInit {
     )
   }
 
-
+V2()
+{
+  of(this.personArray).pipe(
+    map(
+      (persons=> persons.filter(p=>p.name.includes('g')))
+    )
+  )
+}
   getPersonService():Observable<IPerson[]>
   {
     return of(this.personArray);
