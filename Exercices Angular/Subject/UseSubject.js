@@ -7,20 +7,19 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-second',
   standalone: true,
+  imports: [CommonModule],
   template: `
   selected number :
-    {{numberselected}}
+    {{numberselected | async}}
   `,
 })
 export class AppSecond {
   name = 'AngularTwo';
   // @Input() numberselected: number | undefined = undefined;
-  numberselected: number|undefined;
+  numberselected!: Observable<number|undefined>;
   constructor(private service: NumberService)
   {
-    this.service.numberSerlected$.subscribe(n=>{
-      this.numberselected = n;
-    })
+    this.numberselected =  this.service.numberSerlected$;
   }
 }
 
