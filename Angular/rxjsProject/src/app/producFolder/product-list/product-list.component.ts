@@ -1,6 +1,6 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ProductService } from '../product.service';
-import { Subscription } from 'rxjs';
+import { EMPTY, Subscription, catchError, tap } from 'rxjs';
 import { Product } from '../product.model';
 import { CommonModule } from '@angular/common';
 import { ProductDetailComponent } from '../product-detail/product-detail.component';
@@ -12,28 +12,21 @@ import { ProductDetailComponent } from '../product-detail/product-detail.compone
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
 })
-export class ProductListComponent implements OnInit, OnDestroy {
+export class ProductListComponent  {
 
 
 sub!: Subscription ;
-products!: Product[];
 selectedProductId! : number;
+products$ = this.productservice.products$.pipe(
+  tap(()=>console.log('pipeline')),
+  catchError(err=>{
+      console.error(err);
+      return EMPTY;
+})
+);
   constructor(private productservice: ProductService)
   {
     
-  }
-  ngOnDestroy(): void {
-    this.sub.unsubscribe();
-  }
-  ngOnInit(): void {
-     this.sub =  this.productservice.getProducts().subscribe({
-      next:(pr)=>{
-        this.products = pr
-      },
-      error:(err)=>console.error(err),
-     
-    });
-  
   }
 
 

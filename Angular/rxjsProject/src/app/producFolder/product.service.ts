@@ -9,10 +9,10 @@ export class ProductService {
 
   constructor() { }
 
-  getProducts(): Observable<Product[]> {
-    return of(PRODUCTS); // Return the static product list as an observable
-  }
-  //products$ = of(PRODUCTS);
+  // getProducts(): Observable<Product[]> {
+  //   return of(PRODUCTS); // Return the static product list as an observable
+  // }
+  products$ = of(PRODUCTS);
 
   getProductbyId(id: number): Observable<Product>{ 
  return   of(...PRODUCTS).pipe(
