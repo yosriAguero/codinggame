@@ -1,0 +1,2 @@
+Create an observer with properties next , error, complete.
+use of('A','B','C')

@@ -1,0 +1,13 @@
+What is the difference between observable and subject 
+
+for every observable there is one subscriber // unicast 
+one subject have many subscriber // multicast 
+
+observable is cold, don't emit until subscribed
+subject hit, emits without subscription 
+
+What is the difference between Subject and BehaviourSubject 
+BehaviourSubject always emit an initial value 
+
+ 
+
