@@ -1,12 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "6o7VFBzQEgc=",
-=======
-  "dgSpecHash": "JjwF6kSR9bA=",
->>>>>>> 6a80767af8f34aaf84ac4109f5c78c36aa1d1fb2
   "success": true,
-  "projectFilePath": "C:\\Users\\yosri\\source\\repos\\codinggameent\\Csharp\\SolutionCodingGame\\ConsoleApp1\\ConsoleApp1.csproj",
+  "projectFilePath": "C:\\Users\\yosri\\source\\repos\\codinggamenew\\Csharp\\SolutionCodingGame\\ConsoleApp1\\ConsoleApp1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

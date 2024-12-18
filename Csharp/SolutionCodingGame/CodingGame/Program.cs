@@ -9,7 +9,7 @@ using CodingGame.Reverse_Vowels_of_a_String;
 using CodingGame.StringCompression;
 using CodingGame.Sum_Array_except_itself;
 using CodingGame.YEET_YONIK;
-<<<<<<< HEAD
+
 
 
 
@@ -18,9 +18,9 @@ StringCompression.M1();
 
 //ProductExcept.M1();
 
-=======
+
 ContainerCsharp.MaxArea();
->>>>>>> 6a80767af8f34aaf84ac4109f5c78c36aa1d1fb2
+
 //ReverseVowel.ReverseVowelsOfString();
 //int[] flowerbed = flowerbed = [1, 0, 0, 0, 1]; int n = 1;
 //PlaceFlower.CanPlaceFlowersCopilot(flowerbed,n);
