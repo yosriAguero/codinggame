@@ -13,7 +13,11 @@
             {
                 stack.Push(word);
             }
+<<<<<<< HEAD
             //string output = 
+=======
+           // string output = 
+>>>>>>> 6a80767af8f34aaf84ac4109f5c78c36aa1d1fb2
         }
     }
 }

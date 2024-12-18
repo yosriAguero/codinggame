@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "fpsRCazjkuY=",
+=======
+  "dgSpecHash": "lor2HwkT71A=",
+>>>>>>> 6a80767af8f34aaf84ac4109f5c78c36aa1d1fb2
   "success": true,
-  "projectFilePath": "C:\\Users\\yosri\\source\\repos\\codinggamenew\\Csharp\\SolutionCodingGame\\CodingGame\\CodingGame.csproj",
+  "projectFilePath": "C:\\Users\\yosri\\source\\repos\\codinggameent\\Csharp\\SolutionCodingGame\\CodingGame\\CodingGame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yosri\\.nuget\\packages\\microsoft.codecoverage\\17.9.0\\microsoft.codecoverage.17.9.0.nupkg.sha512",
     "C:\\Users\\yosri\\.nuget\\packages\\microsoft.net.test.sdk\\17.9.0\\microsoft.net.test.sdk.17.9.0.nupkg.sha512",

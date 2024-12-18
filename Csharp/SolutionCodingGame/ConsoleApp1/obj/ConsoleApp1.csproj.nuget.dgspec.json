@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yosri\\source\\repos\\codinggamenew\\Csharp\\SolutionCodingGame\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\yosri\\source\\repos\\codinggameent\\Csharp\\SolutionCodingGame\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yosri\\source\\repos\\codinggamenew\\Csharp\\SolutionCodingGame\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\yosri\\source\\repos\\codinggameent\\Csharp\\SolutionCodingGame\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yosri\\source\\repos\\codinggamenew\\Csharp\\SolutionCodingGame\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\Users\\yosri\\source\\repos\\codinggameent\\Csharp\\SolutionCodingGame\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "C:\\Users\\yosri\\source\\repos\\codinggamenew\\Csharp\\SolutionCodingGame\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "C:\\Users\\yosri\\source\\repos\\codinggameent\\Csharp\\SolutionCodingGame\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\yosri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yosri\\source\\repos\\codinggamenew\\Csharp\\SolutionCodingGame\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\yosri\\source\\repos\\codinggameent\\Csharp\\SolutionCodingGame\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yosri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 6a80767af8f34aaf84ac4109f5c78c36aa1d1fb2
         }
       }
     }

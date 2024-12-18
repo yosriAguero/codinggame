@@ -1,0 +1,17 @@
+Given an integer n, print a pattern of stars (*) forming an inverted triangle where the number of stars is n in the first row, and decreases by one in each row until reaching a single star, followed by another pattern of stars forming an upright triangle where the number of stars starts from 1, and increases by one in each row until back to n stars.
+Entrée
+Line 1: An integer n for the maximum width of the pattern of stars.
+Sortie
+Lines 1 to n: A pattern of stars forming an inverted triangle.
+Next n lines: A pattern of stars forming an upright triangle.
+Contraintes
+Exemple
+Entrée
+3
+Sortie
+***
+**
+*
+*
+**
+***
