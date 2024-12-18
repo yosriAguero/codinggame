@@ -27,7 +27,7 @@ public class Solution
 }
 
 // Example usage
-class Program
+class ssr
 {
     static void Main()
     {
