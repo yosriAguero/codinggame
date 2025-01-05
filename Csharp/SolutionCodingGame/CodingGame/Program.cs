@@ -4,6 +4,7 @@
 
 using CodingGame;
 using CodingGame.Can_Place_Flower;
+using CodingGame.DailyTemperature;
 using CodingGame.Merge_Strings_Alternately;
 using CodingGame.Reverse_Vowels_of_a_String;
 using CodingGame.StringCompression;
@@ -17,8 +18,9 @@ using CodingGame.YEET_YONIK;
 StringCompression.M1();
 
 //ProductExcept.M1();
-
-
+int[] tabtemperatures = { 73, 74, 75, 71, 69, 72, 76, 73 };
+DailyTemperatureYosri.Temperatures(tabtemperatures);
+DailyTemperatureYosri.DailyTemperatures(tabtemperatures);
 ContainerCsharp.MaxArea();
 
 //ReverseVowel.ReverseVowelsOfString();
