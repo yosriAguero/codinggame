@@ -19,7 +19,6 @@ StringCompression.M1();
 
 //ProductExcept.M1();
 // restore 1
-//commit one
 int[] tabtemperatures = { 73, 74, 75, 71, 69, 72, 76, 73 };
 DailyTemperatureYosri.Temperatures(tabtemperatures);
 DailyTemperatureYosri.DailyTemperatures(tabtemperatures);
